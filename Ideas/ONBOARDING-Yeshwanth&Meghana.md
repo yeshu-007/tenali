@@ -120,11 +120,11 @@ Tenali is architected as a lightweight, single-process, real-time EdTech system 
 - **Step-by-Step Explanation Engine**: Middleware supporting 50+ puzzle explanation templates.
 - **Live 1v1 Battle Arena**: Real-time WebSocket matchmaking.
 - **Detective Agency & Math Mysteries**: Case-based puzzle chains with story progression.
-- **Spaced-Repetition Leitner Flashcard Engine**: 5-box review cycle with automatic card harvesting and dynamic Relearn Deck ingestion.
-- **LIL Mastery & Error Pattern Analytics Pipeline**: Infrastructure for logging attempts, tracking concept mastery, and analyzing error patterns.
-- **Family Practice (Home Activities)**: Hands-on, screen-free offline parent-child math activities with weekly resets, completion tracking, and streak history.
-- **Proctoring & Supervision**: Camera-based focus and emotion monitoring.
-- **Multi-Language Code Sandbox**: Code execution endpoint supporting 50+ languages.
+- **Flashcard / Leitner Review**: Planned (no dedicated flashcards module found under `client/src/flashcards/` or `server/flashcards.js` in this repo).
+- **LIL Mastery & Attempt Analytics Pipeline**: Implemented and wired via interceptor middleware in `server/index.js`.
+- **Family Practice (Home Activities)**: Planned (no `server/homeActivities.js` or `client/src/homeActivities/` found in this repo).
+- **Proctoring & Supervision**: Implemented on the client via `face-api.js` hooks.
+- **Code Sandbox**: `/api/playground` uses Judge0; `/api/playground2` runs locally with a limited set of languages (documented as 9 in `server/index.js`).
 - **Vocabulary Trainer & General Knowledge Quiz Bank**: 7,662 curated vocabulary words and 991 GK questions.
 - **Cambridge IGCSE 24-Chapter Curriculum**: Comprehensive guided learning journey with concept summaries and progress cards.
 
