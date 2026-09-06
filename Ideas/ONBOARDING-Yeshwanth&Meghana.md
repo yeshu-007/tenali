@@ -136,7 +136,7 @@ During code inspection and manual testing of the repository, several critical bu
 
 ### 1. Usability Bug: Disabled "Solve" Button on Empty Answer Inputs
 
-- **File Location**: [`client/src/App.jsx`](file:///c:/Users/yeshw/Downloads/tenali-main/tenali-main/client/src/App.jsx) (Lines 1467, 4698, and 52853 in `ScaffoldedTablesApp`, `LakshyaTablesApp`, and `SqrtApp`).
+- **File Location**: [client/src/App.jsx](../client/src/App.jsx) (Lines 1467, 4698, and 52853 in `ScaffoldedTablesApp`, `LakshyaTablesApp`, and `SqrtApp`).
 - **What Was Wrong**: The "Solve" (Show Solution) button contained a strict `disabled={!answer}` prop binding:
   ```jsx
   <button className="solve-btn" disabled={!answer} onClick={handleSolve}>
